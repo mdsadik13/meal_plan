@@ -20,8 +20,8 @@ exports.createMeal=Promise(async (req , res, next) =>{
 })
 
 exports.updateMeal=Promise(async (req , res, next) =>{
-
-    const meal= await Meal.findById(req.params.id)
+    const id=req.body.id;
+    const meal= await Meal.findById(id);
 
     if(!meal){
         return ;

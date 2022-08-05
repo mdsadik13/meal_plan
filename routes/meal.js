@@ -4,7 +4,7 @@ const router = express.Router();
 const{ createMeal, updateMeal}= require('../controllers/mealController')
 
 router.route("/createmeal").post(createMeal);
-router.route("/updateMeal/:id").post(updateMeal);
+router.route("/updateMeal").post(updateMeal);
 
 
 
